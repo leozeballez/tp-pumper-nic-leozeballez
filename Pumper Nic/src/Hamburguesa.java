@@ -1,5 +1,5 @@
 public abstract class Hamburguesa {
-    private int medallon = 1;
+    public int medallon = 1;
     public boolean lechuga = true;
     public boolean tomate = true;
     public boolean quesoAzul = false;
@@ -12,6 +12,7 @@ public abstract class Hamburguesa {
     public void agregarMedallon() {
         if(this.medallon != 4){
             this.medallon += 1;
+            this.precio += 50;
         }
     }
 
@@ -24,28 +25,44 @@ public abstract class Hamburguesa {
     }
 
     public void agregarQuesoAzul() {
-        this.quesoAzul = true;
+        if(this.quesoAzul != true){
+            this.quesoAzul = true;
+            this.precio += 20;
+        }
     }
 
     public void agregarBacon() {
-        this.bacon = true;
+        if(this.bacon != true) {
+            this.bacon = true;
+            this.precio += 50;
+        }
     }
 
     public void agregarHuevo() {
-        this.huevo = true;
+        if(this.huevo != true) {
+            this.huevo = true;
+            this.precio += 10;
+        }
     }
 
     public void agregarMollejas() {
-        this.mollejas = true;
+        if(this.mollejas != true) {
+            this.mollejas = true;
+            this.precio += 80;
+        }
     }
 
     public void agregarCebollasCaramelizadas() {
-        this.cebollasCaramelizadas = true;
+        if(this.cebollasCaramelizadas != true) {
+            this.cebollasCaramelizadas = true;
+            this.precio += 60;
+        }
     }
 
     public void quitarMedallon() {
         if(this.medallon != 1) {
             this.medallon -= 1;
+            this.precio -= 50;
         }
     }
 
@@ -58,23 +75,38 @@ public abstract class Hamburguesa {
     }
 
     public void quitarQuesoAzul() {
-        this.quesoAzul = false;
+        if(this.quesoAzul != false) {
+            this.quesoAzul = false;
+            this.precio -= 20;
+        }
     }
 
     public void quitarBacon() {
-        this.bacon = false;
+        if(this.bacon != false) {
+            this.bacon = false;
+            this.precio -= 50;
+        }
     }
 
     public void quitarHuevo() {
-        this.huevo = false;
+        if(this.huevo != false) {
+            this.huevo = false;
+            this.precio -= 10;
+        }
     }
 
     public void quitarMollejas() {
-        this.mollejas = false;
+        if(this.mollejas != false) {
+            this.mollejas = false;
+            this.precio -= 80;
+        }
     }
 
     public void quitarCebollasCaramelizadas() {
-        this.cebollasCaramelizadas = false;
+        if(this.cebollasCaramelizadas != false) {
+            this.cebollasCaramelizadas = false;
+            this.precio -= 60;
+        }
     }
 
     public int costoFinal() {
