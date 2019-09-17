@@ -41,66 +41,10 @@ public abstract class Hamburguesa implements CostoFinal {
         }
     }
 
-    public void agregarTomate() {
-        tomate = true;
-    }
-
-    public void agregarLechuga() {
-        lechuga = true;
-    }
-
-    public void agregarQuesoAzul() {
-        quesoAzul = true;
-    }
-
-    public void agregarBacon() {
-        bacon = true;
-    }
-
-    public void agregarHuevo() {
-        huevo = true;
-    }
-
-    public void agregarMollejas() {
-        mollejas = true;
-    }
-
-    public void agregarCebollasCaramelizadas() {
-        cebollasCaramelizadas = true;
-    }
-
     public void quitarMedallon() {
         if(medallon != 1) {
             medallon -= 1;
         }
-    }
-
-    public void quitarTomate() {
-        tomate = false;
-    }
-
-    public void quitarLechuga() {
-        lechuga = false;
-    }
-
-    public void quitarQuesoAzul() {
-        quesoAzul = false;
-    }
-
-    public void quitarBacon() {
-        bacon = false;
-    }
-
-    public void quitarHuevo() {
-        huevo = false;
-    }
-
-    public void quitarMollejas() {
-        mollejas = false;
-    }
-
-    public void quitarCebollasCaramelizadas() {
-        cebollasCaramelizadas = false;
     }
 
     @Override
