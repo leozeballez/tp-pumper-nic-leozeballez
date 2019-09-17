@@ -101,6 +101,7 @@ public abstract class Hamburguesa implements CostoFinal {
         cebollasCaramelizadas = false;
     }
 
+    @Override
     public int costoFinal() {
         if(this.tieneQuesoAzul()){
             precio += 20;

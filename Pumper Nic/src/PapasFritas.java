@@ -65,6 +65,7 @@ public class PapasFritas implements CostoFinal {
         return salsaBarbacoa;
     }
 
+    @Override
     public int costoFinal() {
         if(this.tieneCheddar()) {
             precio += 30;
