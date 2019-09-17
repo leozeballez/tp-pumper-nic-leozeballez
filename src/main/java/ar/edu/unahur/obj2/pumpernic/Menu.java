@@ -1,3 +1,5 @@
+package ar.edu.unahur.obj2.pumpernic;
+
 public class Menu implements CostoFinal {
     Hamburguesa hamburguesa;
     PapasFritas papas;

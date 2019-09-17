@@ -1,3 +1,5 @@
+package ar.edu.unahur.obj2.pumpernic;
+
 public class PapasFritas implements CostoFinal {
     public int tamanio;
     public boolean cheddar;

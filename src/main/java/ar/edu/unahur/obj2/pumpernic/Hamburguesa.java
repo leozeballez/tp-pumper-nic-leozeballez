@@ -1,3 +1,5 @@
+package ar.edu.unahur.obj2.pumpernic;
+
 public abstract class Hamburguesa implements CostoFinal {
     public int medallon = 1;
     public boolean lechuga = true;

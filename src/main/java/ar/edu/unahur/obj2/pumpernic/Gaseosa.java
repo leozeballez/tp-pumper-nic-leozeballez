@@ -1,4 +1,4 @@
-package ar.edu.unahur.obj2;
+package ar.edu.unahur.obj2.pumpernic;
 
 public class Gaseosa implements CostoFinal {
     public int precio;
